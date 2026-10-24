@@ -6,13 +6,14 @@ Design documents and code for the snow-melt volcanic mudflow (lahar) simulator b
 
 ## Download
 
-**The ready-to-run app and the source are on the [Releases](../../releases) page**, not in this repository. The release has three separate ZIPs:
+**The ready-to-run app and the source are on the [Releases](../../releases) page**, not in this repository. The release has four separate ZIPs:
 
 | File | Contents |
 |:---|:---|
 | `laharsim_exe.zip` | The Windows window app, ready built (**Japanese screens**), with the simulator it runs, the two Tokachi-dake case files and a small-example launcher |
 | `laharsim_exe_en.zip` | The same app (**English screens** by default) |
 | `laharsim.zip` | Design documents (`docs/`, Japanese, L1-L4, the source; `docs_en/`, the complete set for English readers: L1-L3 translated into English, L4 the Japanese originals as is) in separate folders, the code (`src/laharsim/`, `src/floodsim/`, `app/`), the requirements specification (105 requirements), the case files, and empty databases (`ledger/`) |
+| `laharsim_animations.zip` | The animations of the calculations of the book (the 1926 Taisho lahar and a large winter collapse on Tokachi-dake, at 20 m and 40 m grids): 2-D and 3-D animations (MP4 video files only), an interactive 3-D viewer (HTML) and temperature animations (MP4) |
 
 The app needs Python 3.11 and numpy, scipy, numba, matplotlib, pillow and pyproj on your PC (see the README inside the ZIPs); extract to a short path. There is **no APK** (the app is a Windows desktop app). The app is **not code-signed**, so Windows may warn you. Computation results and tests are not included. The Tokachi-dake elevation data is not included; the window fetches it for you. The first run takes a few minutes (numba compiles); try the bundled small example first.
 
